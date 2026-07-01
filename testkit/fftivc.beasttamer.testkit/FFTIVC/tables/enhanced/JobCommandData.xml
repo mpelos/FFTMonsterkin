@@ -7,8 +7,13 @@
     224 = Ramza's command (Chapter 1)
     225 = Ramza's command (Chapters 2-3)
     226 = Ramza's command (Chapter 4)
-  Only the empty slots (AbilityId8..11 for Mettle; checked-empty ones for Ramza) are set,
-  everything else inherits vanilla.
+  Only verified-empty slots are set; everything else inherits vanilla.
+
+  ExtendAbilityIdFlagBits MUST be present and MUST come before the AbilityIdN elements:
+  the loader model's AbilityIdN setter dereferences it (null -> YAX deserialization error),
+  and an explicit value overwrites the game's bits, so it carries the exact vanilla bits
+  for each entry (Ramza's commands need ExtendedAbility1/4/5 for abilities 349/332/333).
+  Our ids 251-254 are < 256, so they add no extension bits.
 -->
 
 <JobCommandTable>
@@ -16,6 +21,7 @@
   <Entries>
     <JobCommand>
       <Id>25</Id>
+      <ExtendAbilityIdFlagBits>0</ExtendAbilityIdFlagBits>
       <AbilityId8>251</AbilityId8>
       <AbilityId9>252</AbilityId9>
       <AbilityId10>253</AbilityId10>
@@ -23,6 +29,7 @@
     </JobCommand>
     <JobCommand>
       <Id>224</Id>
+      <ExtendAbilityIdFlagBits>ExtendedAbility5, ExtendedAbility4, ExtendedAbility1</ExtendAbilityIdFlagBits>
       <AbilityId13>251</AbilityId13>
       <AbilityId14>252</AbilityId14>
       <AbilityId15>253</AbilityId15>
@@ -30,6 +37,7 @@
     </JobCommand>
     <JobCommand>
       <Id>225</Id>
+      <ExtendAbilityIdFlagBits>ExtendedAbility5, ExtendedAbility4, ExtendedAbility1</ExtendAbilityIdFlagBits>
       <AbilityId13>251</AbilityId13>
       <AbilityId14>252</AbilityId14>
       <AbilityId15>253</AbilityId15>
@@ -37,6 +45,7 @@
     </JobCommand>
     <JobCommand>
       <Id>226</Id>
+      <ExtendAbilityIdFlagBits>ExtendedAbility5, ExtendedAbility4, ExtendedAbility1</ExtendAbilityIdFlagBits>
       <AbilityId13>251</AbilityId13>
       <AbilityId14>252</AbilityId14>
       <AbilityId15>253</AbilityId15>
