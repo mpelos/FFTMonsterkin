@@ -1,0 +1,42 @@
+{
+  "ModId": "fftivc.beasttamer",
+  "ModName": "Beast Tamer",
+  "ModAuthor": "mmpel",
+  "ModVersion": "0.9.0",
+  "ModDescription": "Reis' Dragonkin abilities (Dragon's Charm / Gift / Might / Speed) work on all monsters (and any unit), not only Dragons and Hydras.",
+  "ModDll": "",
+  "ModIcon": "",
+  "ModR2RManagedDll32": "",
+  "ModR2RManagedDll64": "",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "fftivc.beasttamer.ReleaseMetadata.json",
+  "PluginData": {
+    "GitHubDependencies": {
+      "IdToConfigMap": {
+        "fftivc.utility.modloader": {
+          "Config": {
+            "UserName": "Nenkai",
+            "RepositoryName": "fftivc.utility.modloader",
+            "UseReleaseTag": true,
+            "AssetFileName": "Mod.zip"
+          },
+          "ReleaseMetadataName": "fftivc.utility.modloader.ReleaseMetadata.json"
+        }
+      }
+    }
+  },
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "fftivc.utility.modloader"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "fft_enhanced.exe"
+  ],
+  "ProjectUrl": ""
+}
