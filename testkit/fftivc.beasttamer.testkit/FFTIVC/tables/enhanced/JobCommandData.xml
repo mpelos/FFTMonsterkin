@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Beast Tamer TESTKIT - do not ship.
+  Adds Reis' four Dragonkin support abilities (251-254) to empty ability slots of:
+    25  = generic Squire "Mettle"
+    224 = Ramza's command (Chapter 1)
+    225 = Ramza's command (Chapters 2-3)
+    226 = Ramza's command (Chapter 4)
+  Only the empty slots (AbilityId8..11 for Mettle; checked-empty ones for Ramza) are set,
+  everything else inherits vanilla.
+-->
+
+<JobCommandTable>
+  <Version>1</Version>
+  <Entries>
+    <JobCommand>
+      <Id>25</Id>
+      <AbilityId8>251</AbilityId8>
+      <AbilityId9>252</AbilityId9>
+      <AbilityId10>253</AbilityId10>
+      <AbilityId11>254</AbilityId11>
+    </JobCommand>
+    <JobCommand>
+      <Id>224</Id>
+      <AbilityId13>251</AbilityId13>
+      <AbilityId14>252</AbilityId14>
+      <AbilityId15>253</AbilityId15>
+      <AbilityId16>254</AbilityId16>
+    </JobCommand>
+    <JobCommand>
+      <Id>225</Id>
+      <AbilityId13>251</AbilityId13>
+      <AbilityId14>252</AbilityId14>
+      <AbilityId15>253</AbilityId15>
+      <AbilityId16>254</AbilityId16>
+    </JobCommand>
+    <JobCommand>
+      <Id>226</Id>
+      <AbilityId13>251</AbilityId13>
+      <AbilityId14>252</AbilityId14>
+      <AbilityId15>253</AbilityId15>
+      <AbilityId16>254</AbilityId16>
+    </JobCommand>
+  </Entries>
+</JobCommandTable>

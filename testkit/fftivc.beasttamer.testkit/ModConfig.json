@@ -1,0 +1,28 @@
+{
+  "ModId": "fftivc.beasttamer.testkit",
+  "ModName": "Beast Tamer TestKit",
+  "ModAuthor": "mmpel",
+  "ModVersion": "0.1.0",
+  "ModDescription": "TEST ONLY - adds Dragon's Charm/Gift/Might/Speed to Squire's Mettle (and Ramza's command) at 0 JP so Beast Tamer can be tested without a Reis save. Do not ship.",
+  "ModDll": "",
+  "ModIcon": "",
+  "ModR2RManagedDll32": "",
+  "ModR2RManagedDll64": "",
+  "ModNativeDll32": "",
+  "ModNativeDll64": "",
+  "Tags": [],
+  "CanUnload": null,
+  "HasExports": null,
+  "IsLibrary": false,
+  "ReleaseMetadataFileName": "fftivc.beasttamer.testkit.ReleaseMetadata.json",
+  "PluginData": {},
+  "IsUniversalMod": false,
+  "ModDependencies": [
+    "fftivc.utility.modloader"
+  ],
+  "OptionalDependencies": [],
+  "SupportedAppId": [
+    "fft_enhanced.exe"
+  ],
+  "ProjectUrl": ""
+}

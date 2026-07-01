@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  Beast Tamer TESTKIT - do not ship.
+  Makes the four Dragonkin support abilities free to learn (JP 0) so any unit with the
+  patched commands can pick them up instantly from the Learn screen.
+-->
+
+<AbilityTable>
+  <Version>1</Version>
+  <Entries>
+    <Ability>
+      <Id>251</Id>
+      <JPCost>0</JPCost>
+    </Ability>
+    <Ability>
+      <Id>252</Id>
+      <JPCost>0</JPCost>
+    </Ability>
+    <Ability>
+      <Id>253</Id>
+      <JPCost>0</JPCost>
+    </Ability>
+    <Ability>
+      <Id>254</Id>
+      <JPCost>0</JPCost>
+    </Ability>
+  </Entries>
+</AbilityTable>
