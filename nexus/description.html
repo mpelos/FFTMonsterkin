@@ -1,0 +1,57 @@
+<h2>Monsterkin</h2>
+
+<p><b>Reis' four Dragonkin support abilities now work on <i>every</i> wild monster &mdash; not just Dragons and Hydras.</b> Charm a Goblin into your party, hand a Chocobo an extra turn, buff a Behemoth before the fight of your life. They are renamed to match their new reach: <b>Monster's Charm</b>, <b>Monster's Gift</b>, <b>Monster's Might</b> and <b>Monster's Speed</b>.</p>
+
+<p>A tiny, <b>data-only</b> mod for <b>FINAL FANTASY TACTICS &ndash; The Ivalice Chronicles</b> (Steam, Enhanced). No EXE edits, no scripts &mdash; just one table field per monster job.</p>
+
+<h3>The problem it fixes</h3>
+<p>In the vanilla game, four of Reis' abilities silently force a <b>MISS</b> on any target that isn't a Dragon or Hydra &mdash; the classic "Dragon Check." That makes them almost useless: the moment your Dragoner tames a Dragon, those abilities have nothing left to do. Monsterkin opens them up to the whole bestiary.</p>
+
+<h3>The abilities</h3>
+<table>
+  <thead>
+    <tr><th>Ability</th><th>Effect</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><b>Monster's Charm</b> <i>(Dragon's Charm)</i></td><td>Charm a distant monster (100%). If it survives, it officially joins your party after the battle.</td></tr>
+    <tr><td><b>Monster's Gift</b> <i>(Dragon's Gift)</i></td><td>Sacrifice your own HP to restore twice as much to a distant monster and cure its status ailments.</td></tr>
+    <tr><td><b>Monster's Might</b> <i>(Dragon's Might)</i></td><td>Raise a distant monster's Bravery, Speed, and physical &amp; magick attack power for the rest of the battle.</td></tr>
+    <tr><td><b>Monster's Speed</b> <i>(Dragon's Speed)</i></td><td>Warp time so a distant monster's next turn comes immediately (Quick).</td></tr>
+  </tbody>
+</table>
+
+<h3>What's covered</h3>
+<ul>
+  <li><b>All 14 wild monster families</b>: Chocobo, Goblin, Bomb, Panther, Squid, Skeleton, Ghoul, Ahriman, Aevis, Pig, Treant, Minotaur, Malboro and Behemoth &mdash; plus their special encounter variants.</li>
+  <li><b>Dragons and Hydras</b> still work exactly as before.</li>
+  <li><b>Humans stay excluded</b> &mdash; the species gate still applies to them, so nothing about your human roster changes.</li>
+  <li>Story/unique monsters (Byblos, the Automaton, Lucavi, etc.) are intentionally left out.</li>
+</ul>
+
+<h3>Faithful to vanilla</h3>
+<ul>
+  <li>Same 100% rates, same effects, same status-cure rider on Monster's Gift. Only the <i>target</i> restriction is widened.</li>
+  <li>The three breath attacks and Holy Breath were never dragon-gated, so they are untouched.</li>
+</ul>
+
+<h3>How it works (for the curious)</h3>
+<p>The Dragon Check lives inside the game's (Denuvo-virtualized) formula code, so it can't be byte-patched &mdash; but it <i>reads data</i>: each target's <code>MonsterGraphic</code> id from the job table (15 = Dragon family and 16 = Hydra family pass; everything else force-misses). Rendering resolves sprites through a completely different path and never reads this field in gameplay. Monsterkin simply sets <code>MonsterGraphic = 15</code> for the 47 generic monster jobs via a small <code>JobData.xml</code> patch. One field per job; everything else inherits vanilla. Humans keep <code>0</code> and remain blocked. Confirmed against the PSX decompilation and proven in-game.</p>
+
+<h3>Requirements</h3>
+<ul>
+  <li><a href="https://github.com/Reloaded-Project/Reloaded-II">Reloaded-II</a></li>
+  <li><a href="https://github.com/Nenkai/fftivc.utility.modloader">Nenkai's FFT IVC mod loader</a> (<code>fftivc.utility.modloader</code>)</li>
+</ul>
+
+<h3>Installation</h3>
+<ol>
+  <li>Install Reloaded-II and the FFT IVC mod loader above.</li>
+  <li>Download this mod and extract it into your <code>Reloaded-II/Mods/</code> folder (or install the package directly through Reloaded-II).</li>
+  <li>Enable <b>Monsterkin</b> for <code>FFT_enhanced.exe</code> and launch the game through Reloaded-II.</li>
+</ol>
+
+<h3>Compatibility</h3>
+<p>Data-only and surgical: it touches a single field (<code>MonsterGraphic</code>) on the generic monster jobs and nothing else. It coexists with any mod that doesn't rewrite those same job rows. It does not alter human units, formulas, or sprites.</p>
+
+<hr>
+<p><i>Not affiliated with Square Enix. FINAL FANTASY TACTICS is a trademark of Square Enix. This is a fan-made, non-commercial modification.</i></p>

@@ -1,0 +1,1 @@
+Reis' Dragonkin abilities — now Monster's Charm, Gift, Might & Speed — work on every wild monster, not just Dragons and Hydras. Charm a Goblin, buff a Chocobo, heal a Behemoth. Humans stay excluded and all vanilla rates and effects are untouched. Tiny, data-only mod for The Ivalice Chronicles (needs Reloaded-II + Nenkai's mod loader).
