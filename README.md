@@ -1,6 +1,6 @@
-# Beast Tamer
+# Monsterkin
 
-**Reis' Dragonkin abilities work on ALL monsters — not just Dragons and Hydras.**
+**Reis' Dragonkin abilities become Monster's Charm / Gift / Might / Speed — and work on ALL monsters, not just Dragons and Hydras.**
 
 A tiny data-only mod for **FINAL FANTASY TACTICS - The Ivalice Chronicles** (Steam, Enhanced),
 built on [Nenkai's mod loader](https://github.com/Nenkai/fftivc.utility.modloader) (Reloaded-II).
@@ -13,10 +13,10 @@ species qualifies:
 
 | Ability | Vanilla | With Beast Tamer |
 |---|---|---|
-| **Dragon's Charm** | Charms a Dragon/Hydra (100%) | Charms any monster (100%) |
-| **Dragon's Gift** | Sacrifice HP, heal a Dragon 2x that + cure ailments | Same, any monster |
-| **Dragon's Might** | +5 Bravery, +2 PA/MA/Speed to a Dragon | Same, any monster |
-| **Dragon's Speed** | Grant a Dragon an immediate turn (Quick) | Same, any monster |
+| **Monster's Charm** (Dragon's Charm) | Charms a Dragon/Hydra (100%); it joins your party after battle | Same, any monster |
+| **Monster's Gift** (Dragon's Gift) | Sacrifice HP, heal a Dragon 2x that + cure ailments | Same, any monster |
+| **Monster's Might** (Dragon's Might) | +5 Bravery, +2 PA/MA/Speed to a Dragon | Same, any monster |
+| **Monster's Speed** (Dragon's Speed) | Grant a Dragon an immediate turn (Quick) | Same, any monster |
 
 - **Humans stay excluded** — the vanilla species gate still applies to them.
 - **Exact vanilla behavior**: same 100% rates, same effects, same status-cure rider on
@@ -25,6 +25,8 @@ species qualifies:
   Ghoul, Ahriman, Aevis, Pig, Treant, Minotaur, Malboro, Behemoth) plus their special
   encounter variants. Dragons/Hydras work as always. Story/unique monsters (Byblos,
   Automaton, Lucavi) are intentionally not included.
+- The four abilities are renamed in-game (English) to match their new reach, with
+  updated descriptions.
 - The three breath attacks and Holy Breath were never dragon-gated and are untouched.
 
 ## How it works (tech)
@@ -36,7 +38,7 @@ force-misses). Rendering resolves sprites through a different path and never rea
 field in gameplay (its only consumer is the check — verified against the PSX decomp and
 proven in-game).
 
-Beast Tamer simply sets `MonsterGraphic = 15` for the 47 generic monster jobs via a
+Monsterkin simply sets `MonsterGraphic = 15` for the 47 generic monster jobs via a
 TableData `JobData.xml` patch (one field per job; everything else inherits vanilla).
 Humans keep `MonsterGraphic = 0` and remain blocked.
 
@@ -48,9 +50,9 @@ Sources: FFHacktics [Dragon_Check](https://ffhacktics.com/wiki/Dragon_Check), th
 
 1. Install [Reloaded-II](https://github.com/Reloaded-Project/Reloaded-II) and
    [fftivc.utility.modloader](https://github.com/Nenkai/fftivc.utility.modloader).
-2. Copy `mod/fftivc.beasttamer` into your `Reloaded-II/Mods/` folder
+2. Copy `mod/fftivc.monsterkin` into your `Reloaded-II/Mods/` folder
    (or install the packaged zip via Reloaded).
-3. Enable **Beast Tamer** for FFT_enhanced.exe and launch via Reloaded.
+3. Enable **Monsterkin** for FFT_enhanced.exe and launch via Reloaded.
 
 ## Variant: "any target" (v1.0 formula re-point)
 
@@ -65,6 +67,7 @@ other, not both.
 
 ```text
 python tools/build_jobdata.py   # regenerates the JobData.xml patch from vanilla data
+python tools/build_names.py     # rebuilds the renamed ability text NXD (needs FF16Tools.CLI)
 .\deploy.ps1                    # copy to Reloaded-II/Mods
 ```
 

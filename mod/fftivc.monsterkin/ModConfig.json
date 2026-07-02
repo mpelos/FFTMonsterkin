@@ -1,9 +1,9 @@
 {
-  "ModId": "fftivc.beasttamer",
-  "ModName": "Beast Tamer",
-  "ModAuthor": "mmpel",
-  "ModVersion": "1.1.0",
-  "ModDescription": "Reis' Dragonkin abilities (Dragon's Charm / Gift / Might / Speed) work on ALL monsters, not only Dragons and Hydras. Humans stay excluded; exact vanilla behavior preserved.",
+  "ModId": "fftivc.monsterkin",
+  "ModName": "Monsterkin",
+  "ModAuthor": "Pélos",
+  "ModVersion": "0.1.0",
+  "ModDescription": "Reis' Dragonkin abilities become Monster's Charm / Gift / Might / Speed and work on ALL monsters, not only Dragons and Hydras. Humans stay excluded; exact vanilla behavior preserved.",
   "ModDll": "",
   "ModIcon": "",
   "ModR2RManagedDll32": "",
@@ -14,7 +14,7 @@
   "CanUnload": null,
   "HasExports": null,
   "IsLibrary": false,
-  "ReleaseMetadataFileName": "fftivc.beasttamer.ReleaseMetadata.json",
+  "ReleaseMetadataFileName": "fftivc.monsterkin.ReleaseMetadata.json",
   "PluginData": {
     "GitHubDependencies": {
       "IdToConfigMap": {

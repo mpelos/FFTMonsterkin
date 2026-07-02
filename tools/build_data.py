@@ -38,7 +38,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 BASE_SQLITE = REPO / "data/override_ability.base.sqlite"
 OUT_SQLITE = REPO / "work/override_ability.beasttamer.sqlite"
-NXD_OUT = REPO / "mod/fftivc.beasttamer/FFTIVC/data/enhanced/nxd/overrideabilityactiondata.nxd"
+NXD_OUT = REPO / "mod/fftivc.monsterkin/FFTIVC/data/enhanced/nxd/overrideabilityactiondata.nxd"
 DEFAULT_FF16TOOLS = Path(
     r"D:/Projects/FFTModNewGame++/tools/FF16Tools.CLI-1.13.2-win-x64/win-x64/FF16Tools.CLI.exe"
 )

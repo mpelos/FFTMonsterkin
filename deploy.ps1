@@ -3,12 +3,12 @@
 
 $ErrorActionPreference = 'Stop'
 
-$modId = 'fftivc.beasttamer'
+$modId = 'fftivc.monsterkin'
 $src   = Join-Path $PSScriptRoot "mod\$modId"
 $dst   = "C:\Reloaded-II\Mods\$modId"
 
 Write-Host ""
-Write-Host "==== Deploy Beast Tamer ====" -ForegroundColor Cyan
+Write-Host "==== Deploy Monsterkin ====" -ForegroundColor Cyan
 Write-Host "  origem : $src"
 Write-Host "  destino: $dst"
 
@@ -43,4 +43,4 @@ foreach ($f in $files) {
 }
 if ($ok) { Write-Host "  verificacao por hash: OK" -ForegroundColor Green } else { exit 1 }
 Write-Host ""
-Write-Host "Pronto. Habilite 'Beast Tamer' no Reloaded-II e lance o jogo pela GUI." -ForegroundColor Yellow
+Write-Host "Pronto. Habilite 'Monsterkin' no Reloaded-II e lance o jogo pela GUI." -ForegroundColor Yellow

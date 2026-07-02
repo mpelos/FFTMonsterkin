@@ -1,7 +1,7 @@
 {
   "ModId": "fftivc.beasttamer.probe",
-  "ModName": "Beast Tamer Probe (JobData graphic)",
-  "ModAuthor": "mmpel",
+  "ModName": "Monsterkin Probe (JobData graphic)",
+  "ModAuthor": "Pélos",
   "ModVersion": "0.1.0",
   "ModDescription": "PROBE ONLY - sets Goblin family MonsterGraphic to 15 (Dragon) to test whether the Dragon Check reads JobData live and whether rendering is unaffected. Do not ship.",
   "ModDll": "",
