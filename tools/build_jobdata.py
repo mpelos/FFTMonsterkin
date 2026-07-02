@@ -15,7 +15,7 @@ intentionally NOT included: "all monsters" here means the tamable wild
 families, mirroring the classic community patch's range.
 
 Usage: python tools/build_jobdata.py
-Writes: mod/fftivc.monsterkin/FFTIVC/tables/enhanced/JobData.xml
+Writes: mod/ffttic.monsterkin/FFTIVC/tables/enhanced/JobData.xml
 """
 from __future__ import annotations
 
@@ -25,7 +25,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
 TEMPLATE = Path(r"C:/Reloaded-II/Mods/fftivc.utility.modloader/TableData/JobData.xml")
-OUT = REPO / "mod/fftivc.monsterkin/FFTIVC/tables/enhanced/JobData.xml"
+OUT = REPO / "mod/ffttic.monsterkin/FFTIVC/tables/enhanced/JobData.xml"
 
 DRAGON_GRAPHIC = 15
 

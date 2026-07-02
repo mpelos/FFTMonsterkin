@@ -3,7 +3,7 @@
 
 $ErrorActionPreference = 'Stop'
 
-$modId = 'fftivc.monsterkin'
+$modId = 'ffttic.monsterkin'
 $src   = Join-Path $PSScriptRoot "mod\$modId"
 $dst   = "C:\Reloaded-II\Mods\$modId"
 

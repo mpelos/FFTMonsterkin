@@ -1,5 +1,5 @@
 {
-  "ModId": "fftivc.monsterkin",
+  "ModId": "ffttic.monsterkin",
   "ModName": "Monsterkin",
   "ModAuthor": "Pélos",
   "ModVersion": "0.1.0",
@@ -14,7 +14,7 @@
   "CanUnload": null,
   "HasExports": null,
   "IsLibrary": false,
-  "ReleaseMetadataFileName": "fftivc.monsterkin.ReleaseMetadata.json",
+  "ReleaseMetadataFileName": "ffttic.monsterkin.ReleaseMetadata.json",
   "PluginData": {
     "GitHubDependencies": {
       "IdToConfigMap": {

@@ -21,7 +21,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[1]
 BASE = REPO / "data/ability_en.base.sqlite"
 OUT_SQLITE = REPO / "work/ability_en.monsterkin.sqlite"
-NXD_DIR = REPO / "mod/fftivc.monsterkin/FFTIVC/data/enhanced/nxd"
+NXD_DIR = REPO / "mod/ffttic.monsterkin/FFTIVC/data/enhanced/nxd"
 DEFAULT_FF16TOOLS = Path(
     r"D:/Projects/FFTModNewGame++/tools/FF16Tools.CLI-1.13.2-win-x64/win-x64/FF16Tools.CLI.exe"
 )

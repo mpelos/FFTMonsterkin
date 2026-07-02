@@ -50,7 +50,7 @@ Sources: FFHacktics [Dragon_Check](https://ffhacktics.com/wiki/Dragon_Check), th
 
 1. Install [Reloaded-II](https://github.com/Reloaded-Project/Reloaded-II) and
    [fftivc.utility.modloader](https://github.com/Nenkai/fftivc.utility.modloader).
-2. Copy `mod/fftivc.monsterkin` into your `Reloaded-II/Mods/` folder
+2. Copy `mod/ffttic.monsterkin` into your `Reloaded-II/Mods/` folder
    (or install the packaged zip via Reloaded).
 3. Enable **Monsterkin** for FFT_enhanced.exe and launch via Reloaded.
 
